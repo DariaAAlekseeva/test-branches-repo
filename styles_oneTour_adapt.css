@@ -1,0 +1,473 @@
+@media screen and (max-width:1200px) {
+
+    .seeAllLink {
+        display: inline-block;
+
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        margin-right: 10px;
+        color: #282828;
+    }
+
+    .mainTitle {
+        font-weight: 700;
+        font-size: 24px;
+        color: #0499DD;
+        margin-bottom: 40px;
+
+    }
+
+    header {
+        width: 100%;
+        height: 900px;
+    }
+
+    .header__navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-btn span {
+        height: 2px;
+    }
+    
+    .header__navigation-logo {
+        margin: 27px 0 0 10%;
+    }
+
+    .header__navigation-menu {
+        display: none;
+    }
+
+    .header__title {
+        margin: 240px 0 0 10%;
+    }
+
+    .header__title p:last-of-type {
+        font-size: 36px;
+    }
+
+    .tourDescription {
+        flex-direction: column;
+        margin: 150px 10%;
+    }
+
+    .tourDescription__text {
+        width: 100%;
+    }
+
+    .tourDescription__pic {
+        width: 100%;
+        margin-top: 70px;
+        justify-content: center;
+    }
+
+   
+
+    .routeDescr {
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 150px;
+        overflow: hidden;
+    }
+
+    .routeDescr__text-list {
+        width: 80%;
+    }
+
+    .routeDescr__container {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .routeDescr__slider-cards {
+        margin-top: 90px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .routeDescr__slider-cards-item {
+        border-radius: 10px;
+        width: 360px;
+        height: 490px;
+        margin-right: 20px;
+    }
+
+    .routeDescr .slick-slide {
+        height: 570px;
+        width: 410px;
+    }
+
+    .gallery {
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .gallery .mainTitle {
+        margin-bottom: 90px;
+        margin-left: 10%;
+    }
+
+    .gallery__container {
+        padding-right: 20px;
+        grid-template-columns: 0px 0px 6fr 5fr 4fr;
+        gap: 10px;
+    }
+
+    .gallery__container-img1 {
+        width: 0px;
+    }
+
+    .gallery__container-img3 {
+        width: 0px;
+    }
+
+    .gallery__container-img4 {
+        width: 0px;
+    }
+
+    .gallery__container-img5 {
+        width: 0px;
+    }
+
+
+    .reviews__cards {
+        margin-left: 10%;
+    }
+
+    .reviews__cards-item {
+        width: 505px;
+        height: 250px;
+    }
+
+    .reviews__cards-item img {
+        width: 168px;
+        height: 168px;
+        margin: 20px;
+    }
+
+    .reviews__cards-item-info {
+        margin: 20px 20px 0 0;
+        font-size: 12px;
+    }
+
+    .reviews__cards-item-info-title {
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .reviews__cards-item-info-text {
+        font-size: 12px;
+
+        margin-left: 200px;
+        margin-top: 5px;
+    }
+
+    .reviews__cards-item.slick-slide {
+        height: 250px;
+    }
+
+  
+
+    footer {
+        background-color: #EDEDED;
+    }
+
+    .footer___container {
+        margin: 0px 10%;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__container-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer___container a {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-decoration: none;
+        color: #282828;
+    }
+
+    .footer__container-column:last-child {
+        align-self: start;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+
+    .seeAllLink {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        margin-right: 10px;
+        color: #282828;
+    }
+
+    .mainTitle {
+        font-weight: 700;
+        font-size: 24px;
+        color: #0499DD;
+        margin-bottom: 40px;
+    }
+
+    header {
+        width: 100%;
+        height: 800px;
+    }
+
+    .header__navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__navigation-logo {
+        margin: 27px 0 0 5%;
+    }
+
+    .header__navigation-menu {
+        display: none;
+    }
+
+    .header__title {
+        margin: 240px 0 0 5%;
+    }
+
+    .header__title p:last-of-type {
+        font-size: 30px;
+    }
+
+    .tourDescription {
+        margin: 150px 5%;
+    }
+
+    .tourDescription__text {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .tourDescription__pic {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .tourDescription__pic div {
+        margin-bottom: 30px;
+    }
+
+    .calendar > div:last-child{
+        width: 100%;
+        min-width: 300px;
+        right: 0
+    }
+
+    .routeDescr {
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 150px;
+        overflow: hidden;
+    }
+
+    .routeDescr__text-list li {
+        margin-left: 5%;
+    }
+
+    .routeDescr__text-list {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .routeDescr__container {
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    .routeDescr__slider-cards {
+        margin-top: 90px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 140%;
+    }
+
+    .routeDescr__slider-cards-item {
+        border-radius: 10px;
+        width: 280px;
+        height: 480px;
+        margin-right: 20px;
+    }
+
+    .routeDescr .slick-slide {
+        height: 480px;
+        width: 280px;
+    }
+
+    .expenses .mainTitle {
+        margin-left: 5%;
+    }
+
+    .gallery {
+        box-sizing: border-box;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .gallery .mainTitle {
+        margin-bottom: 90px;
+        margin-left: 0%;
+    }
+
+    .gallery__container {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .gallery__container-img2 {
+        grid-area: 1 / 1 / 3 / 2;
+        background: url(img/gallery_img/2.png);
+    }
+
+    .gallery__container-img6 {
+        grid-area: 1 / 2 / 2 / 3;
+        background: url(img/gallery_img/6.png);
+    }
+
+    .gallery__container-img7 {
+        grid-area: 2 / 2 / 3 / 3;
+        background: url(img/gallery_img/7.png);
+    }
+
+    .gallery__container-img8 {
+        grid-area: 3 / 1 / 4 / 3;
+        background: url(img/gallery_img/8.png);
+    }
+
+    .reviews .mainTitle {
+        margin-left: 5%;
+    }
+
+    .reviews__cards {
+        margin-left: 5%;
+    }
+
+    .reviews__cards-item {
+        width: 280px;
+        height: 450px;
+    }
+
+    .reviews__cards-item img {
+        width: 80px;
+        height: 80px;
+        margin: 30px 0 0 30px;
+        float: none;
+    }
+
+    .reviews__cards-item-info {
+        margin: 20px 20px 0 20px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .reviews__cards-item-info-title {
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .reviews__cards-item-info-text {
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .reviews__cards-item.slick-slide {
+        height: 450px;
+    }
+
+    .bookTour {
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+        margin: 0;
+        margin-top: 150px;
+    }
+
+    .bookTour div:first-child {
+        width: 90%;
+        height: 340px;
+        margin: 0 5%;
+    }
+
+
+    .bookTour__title {
+        margin: 40px auto 60px auto;
+    }
+
+    .bookTour div {
+        display: flex;
+        flex-direction: column;
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    .bookTour__form {
+        width: 90%;
+        margin: 0 5%;
+
+    }
+
+    .bookTour__form a {
+        margin-top: 40px;
+        margin: 40px auto 150px auto;
+    }
+
+    .footer___container {
+        margin: 0px 5%;
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer__container-column:last-child {
+        align-self: center;
+    }
+
+    .footer__container-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer___container a {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-decoration: none;
+        color: #282828;
+    }
+
+
+}

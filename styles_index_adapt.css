@@ -1,0 +1,420 @@
+@media screen and (max-width:1100px) {
+
+    header {
+        height: 1024px;
+    }
+
+    .header__title div {
+       width: 80%;
+    }
+
+    .header__navigation-menu {
+        display: none;
+    }
+
+    .menu-btn span {
+        height: 2px;
+    }
+    .header__title {
+        position: relative;
+        margin: 240px 0 0 10%;
+    }
+
+    .header__title p:first-of-type {
+        font-size: 48px;
+    }
+
+    .header__title p:last-of-type {
+        left: 270px;
+        top: 30px;
+        font-size: 36px;
+    }
+
+    .header__socialmedia {
+        top: 450px;
+    }
+
+    .videoGallery {
+        left: 45%;
+        width: 55%;
+    }
+
+    .popularTours .mainTitle {
+        width: 90%;
+        margin-right: 10%;
+    }
+
+    .popularTours__cards-item {
+        width: 295px;
+    }
+
+    .popularTours__cards-item-info {
+        margin-top: 170px;
+    }
+
+    .typeOfTours__row {
+        flex-direction: column;
+    }
+
+    .typeOfTours__row-item {
+        width: 100%
+    }
+
+    .typeOfTours__bookingTours {
+        width: 80%;
+    }
+
+    .gallery {
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .gallery .mainTitle {
+        margin-bottom: 90px;
+        margin-left: 10%;
+    }
+
+    .gallery__container {
+        padding-right: 20px;
+        grid-template-columns: 0px 0px 6fr 5fr 4fr;
+        gap: 10px;
+    }
+
+    .gallery__container-img1 {
+        width: 0px;
+    }
+
+    .gallery__container-img3 {
+        width: 0px;
+    }
+
+    .gallery__container-img4 {
+        width: 0px;
+    }
+
+    .gallery__container-img5 {
+        width: 0px;
+    }
+
+    .reviews__cards {
+        margin-left: 10%;
+    }
+
+    .reviews__cards-item {
+        width: 505px;
+        height: 250px;
+    }
+
+    .reviews__cards-item img {
+        width: 168px;
+        height: 168px;
+        margin: 20px;
+    }
+
+    .reviews__cards-item-info {
+        margin: 20px 20px 0 0;
+        font-size: 12px;
+    }
+
+    .reviews__cards-item-info-title {
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .reviews__cards-item-info-text {
+        margin-left: 200px;
+        margin-top: 5px;
+    }
+
+    .reviews__cards-item.slick-slide {
+        height: 250px;
+    }
+
+    .feedback__form {
+        width: 400px;
+        height: 640px;
+        margin: 0 10% 0 auto;
+    }
+
+    .feedback__form-container {
+        height: 310px;
+        width: 310px;
+    }
+
+    .feedback__form-input input {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    header {
+        height: 928px;
+    }
+
+    .header__navigation-logo {
+        margin: 27px 0 0 5%;
+    }
+
+    .header__title div {
+        font-size: 5em;
+        width: 80%;
+        margin-bottom: 100px;
+     }
+
+    .header__navigation-menu {
+        display: none;
+    }
+
+    .header__title {
+        position: relative;
+        width: 80%;
+        margin: 150px 0 0 5%;
+    }
+
+    .header__title p:first-of-type {
+        font-size: 36px;
+    }
+
+    .header__title p:last-of-type {
+        left: 65%;
+        top: 30px;
+        font-size: 24px;
+    }
+
+    .header__socialmedia {
+        top: 530px;
+    }
+
+    header .bigBlueButton {
+        margin: 0 auto 60px 10%;
+    }
+
+    header .bigBlueButton {
+        margin: 0px 5%;
+    }
+
+    .videoGallery {
+        left: 5%;
+        width: 95%;
+    }
+
+    .videoGallery__card-video {
+        width: 290px;
+        height: 190px;
+    }
+
+    .videoGallery .slick-slide {
+        height: 190px;
+    }
+
+    .popularTours .mainTitle {
+        width: 95%;
+        margin-right: 5%;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .popularTours .seeAllLink {
+        display: none;
+    }
+
+    .popularTours__cards-item {
+        width: 295px;
+    }
+
+    .popularTours__cards-item-info {
+        margin-top: 160px;
+    }
+
+    .popularTours {
+        margin: 0px 0px 350px 5%;
+
+        width: 95%;
+    }
+
+    .popularTours__cards-item {
+        width: 280px;
+        height: 540px;
+    }
+
+    .popularTours__img1 {
+        background-size: auto 100%;
+    }
+
+    .popularTours__img2 {
+        background-size: auto 100%;
+    }
+
+    .popularTours__img3 {
+        background-size: auto 100%;
+    }
+
+    .popularTours__img4 {
+        background-size: auto 150%;
+    }
+
+    .popularTours .slick-slide {
+        height: 540px;
+    }
+
+    .popularTours__cards-item-info {
+        margin: 210px 16px 100px 16px;
+    }
+
+    .aboutUs__container-info {
+        position: absolute;
+        right: 10%;
+        left: 10%;
+        width: 80%;
+        padding: 40px 40px;
+    }
+
+    .typeOfTours__row {
+        flex-direction: column;
+    }
+
+    .typeOfTours__row-item {
+        width: 100%
+    }
+
+    .typeOfTours__bookingTours {
+        width: 100%;
+    }
+
+    .gallery {
+        box-sizing: border-box;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .gallery .mainTitle {
+        margin-bottom: 90px;
+        margin-left: 5%;
+    }
+
+    .gallery__container {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .gallery__container-img2{
+        grid-area: 1 / 1 / 3 / 2;
+        background: url(img/gallery_img/2.png);
+    }
+
+    .gallery__container-img6{
+        grid-area: 1 / 2 / 2 / 3;
+        background: url(img/gallery_img/3.png);
+    }
+
+    .gallery__container-img7{
+        grid-area: 2 / 2 / 3 / 3;
+        background: url(img/gallery_img/4.png);
+    }
+
+    .gallery__container-img8{
+        grid-area: 3 / 1 / 4 / 3;
+        background: url(img/gallery_img/8.png);
+    }
+
+
+    .reviews .mainTitle {
+        margin-left: 5%;
+    }
+    
+    .reviews__cards {
+        margin-left: 5%;
+    }
+    
+    .reviews__cards-item {
+        width: 280px;
+        height: 450px;
+      
+    }
+    
+    .reviews__cards-item img {
+        width: 80px;
+        height: 80px;
+        margin: 30px 0 0 30px;
+        float: none;
+    }
+    
+    .reviews__cards-item-info {
+        margin: 20px 20px 0 20px;
+        color: #282828;
+        text-decoration: none;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 17px;
+    }
+    
+    .reviews__cards-item-info-title {
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    
+    .reviews__cards-item-info-text {
+        font-weight: 500;
+        margin: 0;
+    }
+    
+    .reviews__cards-item.slick-slide {
+        height: 450px;
+    }
+    
+    .feedback__form {
+        width: 90%;
+        height: 640px;
+        margin: 5%;
+    }
+    
+    .feedback__form-container {
+        top: 132px;
+        height: 360px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .feedback__form-input input {
+        width: 90%;
+    }
+    
+    .feedback__form-container .bigBlueButton {
+        margin-top: 80px;
+    }
+    
+    .footer___container {
+        margin: 0px 5%;
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer__container-column:last-child {
+        align-self: center;
+    }
+
+    .footer__container-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer___container a {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-decoration: none;
+        color: #282828;
+    }
+}
