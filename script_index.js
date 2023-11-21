@@ -39,18 +39,15 @@ $('.videoGallery').slick({
 
 });
 
-let menuBtn = document.querySelector('.menu-btn');
-let menu = document.querySelector('.menu');
+let burgerMenu = document.querySelector('.burgerMenu');
+let burgerMenuItems = document.querySelector('.burgerMenuItems');
 
-menuBtn.addEventListener('click', function () {
-    menuBtn.classList.toggle('active');
-    menu.classList.toggle('active');
+burgerMenu.addEventListener('click', function () {
+    burgerMenu.classList.toggle('active');
+    burgerMenuItems.classList.toggle('active');
 })
 
 
-function sendAppl() {
-
-}
 
 
 

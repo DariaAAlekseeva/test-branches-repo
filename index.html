@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles_index.css">
     <link rel="stylesheet" href="styles_index_adapt.css">
+    <link rel="stylesheet" href="/modal.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -19,6 +20,17 @@
 </head>
 
 <body>
+    <div id="modalWindow" class="modal">
+        <div class="modalWindow__content">
+          <span class="close">&times;</span>
+          <div>
+            <input type="text" id="login" placeholder="Логин"></input>
+            <input type="text" id="password" placeholder="Пароль"></input>
+            <button class="bigBlueButton" onclick="loginPC()">Войти</button>
+          </div>
+        </div>
+      </div>
+
     <header>
         <nav class="header__navigation">
             <img class="header__navigation-logo" src="img/logo.png" alt="логотип агенства Pero Travel">
@@ -27,17 +39,17 @@
             <div class="header__navigation-menu">
                 <a class="header__navigation-menu-item" href="/index.html">Главная</a>
                 <a class="header__navigation-menu-item" href="/tours.html">Экскурсии</a>
-                <a class="header__navigation-menu-item" href="index.html">Личный кабинет</a>
+                <a class="header__navigation-menu-item"  id="loginButton">Личный кабинет</a>
             </div>
         </nav>
 
-        <div class="menu-btn">
+        <div class="burgerMenu">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
-        <div class="menu">
+        <div class="burgerMenuItems">
             <nav>
                 <ul>
                     <li><a href="/index.html">Главная</a></li>
@@ -437,6 +449,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="script_index.js"></script>
+    <script src="/modal.js"></script>
 
 </body>
 

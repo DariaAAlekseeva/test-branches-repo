@@ -12,8 +12,11 @@
         display: none;
     }
 
-    .menu-btn span {
-        height: 2px;
+    .burgerMenu {
+        top: -30px;
+    }
+    .burgerMenu span {
+        width: 30px;
     }
     .header__title {
         position: relative;
