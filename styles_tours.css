@@ -60,19 +60,19 @@ header {
     margin: 27px 0 0 10%;
 }
 
-.menu-btn {
+.burgerMenu {
     width: 30px;
     height: 30px;
     position: relative;
-    top: -30px;
+    top: -200px;
     left: 85%;
     z-index: 6;
     overflow: hidden;
 }
 
-.menu-btn span {
-    width: 30px;
-    height: 0px;
+.burgerMenu span {
+    width: 0px;
+    height: 2px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -81,30 +81,30 @@ header {
     transition: all 0.5s;
 }
 
-.menu-btn span:nth-of-type(2) {
+.burgerMenu span:nth-of-type(2) {
     top: calc(50% - 5px);
 }
 
-.menu-btn span:nth-of-type(3) {
+.burgerMenu span:nth-of-type(3) {
     top: calc(50% + 5px);
 }
 
-.menu-btn.active span:nth-of-type(1) {
+.burgerMenu.active span:nth-of-type(1) {
     display: none;
 }
 
-.menu-btn.active span:nth-of-type(2) {
+.burgerMenu.active span:nth-of-type(2) {
     top: 50%;
     transform: translate(-50%, 0%) rotate(45deg);
 
 }
 
-.menu-btn.active span:nth-of-type(3) {
+.burgerMenu.active span:nth-of-type(3) {
     top: 50%;
     transform: translate(-50%, 0%) rotate(-45deg);
 }
 
-.menu {
+.burgerMenuItems {
     position: fixed;
     z-index: 5;
     top: 0;
@@ -118,21 +118,21 @@ header {
 
 }
 
-.menu.active {
+.burgerMenuItems.active {
     transform: translateX(0);
 }
 
-.menu li {
+.burgerMenuItems li {
     list-style-type: none;
     margin: 40px 30px;
 }
 
-.menu,
-.menu a:visited {
+.burgerMenuItems,
+.burgerMenuItems a:visited {
     color: #0499DD;
 }
 
-.menu ul a {
+.burgerMenuItems ul a {
     font-size: 16px;
 }
 
@@ -146,7 +146,7 @@ header {
     margin-left: 20px;
 }
 
-.header__navigation-menu-item:hover {
+.header__navigation-menu a:hover {
     color: #FFC700;
 }
 
@@ -344,11 +344,12 @@ header {
 .catalog__content-tours-card {
     display: flex;
     width: 100%;
-    height: 320px;
+    height: 340px;
     background-color: #FFF;
     box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
     border-radius: 10px;
     margin-bottom: 20px;
+    
 }
 
 .catalog__content-tours-card-img{
@@ -367,6 +368,7 @@ header {
 .catalog__content-tours-card-info {
     width: 90%;
     margin: 20px 40px;
+  
 
 }
 
@@ -463,6 +465,7 @@ header {
     background-color: #ededed;
     border-radius: 100%;
     text-align: center;
+ 
 }
 
 .favButton svg {

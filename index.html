@@ -19,27 +19,34 @@
 
 </head>
 
-<body>
+<body onload="isUserAuthorized()">
     <div id="modalWindow" class="modal">
         <div class="modalWindow__content">
-          <span class="close">&times;</span>
-          <div>
-            <input type="text" id="login" placeholder="Логин"></input>
-            <input type="text" id="password" placeholder="Пароль"></input>
-            <button class="bigBlueButton" onclick="loginPC()">Войти</button>
-          </div>
+            <span class="close" onclick="closeModalWindow()">&times;</span>
+            <div>
+                
+                    <input type="text" id="login" placeholder="Логин"></input>
+                    <input type="password" id="password" placeholder="Пароль"></input>
+                    <button  class="bigBlueButton" onclick="login()">Войти</button>
+            
+            </div>
         </div>
-      </div>
+    </div>
 
     <header>
         <nav class="header__navigation">
             <img class="header__navigation-logo" src="img/logo.png" alt="логотип агенства Pero Travel">
 
 
-            <div class="header__navigation-menu">
+            <div class="header__navigation-menu" id="notAuthorizedMenu">
                 <a class="header__navigation-menu-item" href="/index.html">Главная</a>
                 <a class="header__navigation-menu-item" href="/tours.html">Экскурсии</a>
-                <a class="header__navigation-menu-item"  id="loginButton">Личный кабинет</a>
+                <a class="header__navigation-menu-item" id="loginButton">Личный кабинет</a>
+            </div>
+            <div class="header__navigation-menu" id="authorizedMenu" style="display: none;">
+                <a class="header__navigation-menu-item" href="/index.html">Главная</a>
+                <a class="header__navigation-menu-item" href="/tours.html">Экскурсии</a>
+                <span class="header__navigation-menu-item" id="loginValue">имя пользователя</span>
             </div>
         </nav>
 
@@ -100,7 +107,7 @@
     <section class="videoGallery">
         <div class="videoGallery__card">
             <a href="#">
-                
+
                 <img src="img/videoGallery_img/img2.jpeg" alt="сплав по реке Кодор"
                     title="смотреть видео сплава по реке Кодор" class="videoGallery__card-video">
             </a>
@@ -129,7 +136,7 @@
                     title="смотреть видео с горных дорог Абхазии" class="videoGallery__card-video">
             </a>
         </div>
-    
+
     </section>
 
     <section class="popularTours">
@@ -381,17 +388,23 @@
 
     <section class="feedback">
         <div class="feedback__form">
-            <form class="feedback__form-container" method="post">
+            <div class="feedback__form-container">
                 <p class="feedback__form-title">Остались вопросы?</p>
                 <p class="feedback__form-subtitle">Оставь заявку, и мы ответим!</p>
-                <input type="text" name="name" placeholder="Имя">
-                <input type="text" name="phone" placeholder="Телефон">
-                <input type="text" name="email" placeholder="Почта">
-                <button class="bigBlueButton" onclick="sendAppl()">Оставить заявку</button>
-            </form>
+                <input  type="text" name="name" id="userName" placeholder="Имя*" oninput="makeButtonActive() ">
+                <input type="text" name="phone" id = 'userPhone' placeholder="Телефон*" oninput="makeButtonActive() ">
+                <input type="text" name="email" id="userEmail" placeholder="Почта*" oninput="makeButtonActive() ">
+                <button disabled class="bigBlueButton" onclick="sendAppl()" id="buttonSendAppl">Оставить заявку</button>
+            </div>
+            <div class="feedback__sendMsg" id="sendMsg">
+                <p id="sendMsg_txt"></p>
+                <button class="bigBlueButton buttonCloseSendMsg" onclick="closeSendMsg()">Закрыть</button>
+           </div>
+    
         </div>
-        </div>
-        
+
+       
+
     </section>
 
     <footer>
@@ -450,6 +463,7 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="script_index.js"></script>
     <script src="/modal.js"></script>
+    <script src="login.js"></script>
 
 </body>
 

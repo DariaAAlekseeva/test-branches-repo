@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERO TRAVEL - Абхазия</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -11,30 +12,47 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles_oneTour.css">
     <link rel="stylesheet" href="styles_oneTour_adapt.css">
+    <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <title>PERO TRAVEL - Абхазия</title>
 </head>
 
-<body>
+<body onload="onLoad()">
+    <div id="modalWindow" class="modal">
+        <div class="modalWindow__content">
+            <span class="close" onclick="closeModalWindow()">&times;</span>
+            <div>
+
+                <input type="text" id="login" placeholder="Логин"></input>
+                <input type="password" id="password" placeholder="Пароль"></input>
+                <button class="bigBlueButton" onclick="login()">Войти</button>
+
+            </div>
+        </div>
+    </div>
 
     <header>
         <nav class="header__navigation">
-            <img class="header__navigation-logo" src="img/logo.png" alt="логотип агенства">
-            <div class="header__navigation-menu">
+            <img class="header__navigation-logo" src="img/logo.png" alt="логотип агенства Pero Travel">
+            <div class="header__navigation-menu" id="notAuthorizedMenu">
                 <a class="header__navigation-menu-item" href="/index.html">Главная</a>
                 <a class="header__navigation-menu-item" href="/tours.html">Экскурсии</a>
-                <a class="header__navigation-menu-item" href="/oneTour.html">Личный кабинет</a>
+                <a class="header__navigation-menu-item" id="loginButton">Личный кабинет</a>
+            </div>
+            <div class="header__navigation-menu" id="authorizedMenu" style="display: none;">
+                <a class="header__navigation-menu-item" href="/index.html">Главная</a>
+                <a class="header__navigation-menu-item" href="/tours.html">Экскурсии</a>
+                <span class="header__navigation-menu-item" id="loginValue">имя пользователя</span>
             </div>
         </nav>
-        <div class="menu-btn">
+        <div class="burgerMenu">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
-        <div class="menu">
+        <div class="burgerMenuItems">
             <nav>
                 <ul>
                     <li><a href="/index.html">Главная</a></li>
@@ -47,7 +65,7 @@
             <p>Автобусный тур</p>
             <p>Золотое кольцо Абхазии</p>
         </div>
-        <a class="gradientButton " href="/tours.html">К другим экскурсиям</a>
+        <a class="bigBlueButton " href="/tours.html">К другим экскурсиям</a>
 
     </header>
 
@@ -244,10 +262,10 @@
         <div>
             <p class="bookTour__title mainTitle">Забронировать тур</p>
             <form class="bookTour__form" action="">
-                <input type="date" id="date" placeholder="2023-11-20">
-                <input type="text" id="people" placeholder="5 взрослых">
-                <input type="text" id="children" placeholder="5 детей">
-                <a class="showButton gradientButton" href="">Забронировать</a>
+                <input type="date" id="date" value = "2023-11-20"></input>
+                <input type="text" id="people" value= "5 взрослых"></input>
+                <input type="text" id="children" value="5 детей"></input>
+                <a class="showButton bigBlueButton" href="">Забронировать</a>
             </form>
         </div>
     </section>
@@ -307,7 +325,14 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="/script_oneTour.js"></script>
     <script src="/script_calendar.js"></script>
-
+    <script src="/modal.js"></script>
+    <script src="/login.js"></script>
+    <script type="text/javascript">
+        function onLoad() {
+            isUserAuthorized();
+            initCalendar();
+        }
+    </script>
 </body>
 
 </html>

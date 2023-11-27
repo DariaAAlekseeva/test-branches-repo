@@ -28,15 +28,20 @@
         display: flex;
         justify-content: space-between;
     }
-    .menu-btn span {
-        height: 2px;
+
+    .burgerMenu {
+        top: -30px;
+    }
+
+    .burgerMenu span {
+        width: 30px;
     }
     
-    .header__navigation-logo {
+    .header__navigation-logo{
         margin: 27px 0 0 10%;
     }
 
-    .header__navigation-menu {
+    .header__navigation-menu-item {
         display: none;
     }
 

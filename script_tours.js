@@ -1,5 +1,5 @@
-let menuBtn = document.querySelector('.menu-btn');
-let menu = document.querySelector('.menu');
+let menuBtn = document.querySelector('.burgerMenu');
+let menu = document.querySelector('.burgerMenuItems');
 
 menuBtn.addEventListener('click', function () {
     menuBtn.classList.toggle('active');

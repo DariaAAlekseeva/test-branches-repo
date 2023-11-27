@@ -31,7 +31,7 @@ body {
 
 }
 
-.gradientButton {
+.bigBlueButton {
     display: block;
     width: 230px;
     height: 50px;
@@ -77,7 +77,7 @@ header {
 
 }
 
-.header__navigation-menu-item:hover {
+.header__navigation-menu a:hover {
     color: #FFC700;
 }
 
@@ -85,6 +85,7 @@ header {
 .customDots{
     margin-left: 20%;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .customDots .slick-active {
@@ -108,6 +109,7 @@ header {
     bottom: 10px;
     font-size: 36px;
     color: #d4d4d4;
+    cursor: pointer;
 }
 
 .buttonNext{
@@ -120,19 +122,19 @@ header {
 
 
 
-.menu-btn {
+.burgerMenu {
     width: 30px;
     height: 30px;
     position: relative;
-    top: -30px;
+    top: -200px;
     left: 85%;
     z-index: 6;
     overflow: hidden;
 }
 
-.menu-btn span {
-    width: 30px;
-    height: 0px;
+.burgerMenu span {
+    width: 0px;
+    height: 2px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -141,30 +143,30 @@ header {
     transition: all 0.5s;
 }
 
-.menu-btn span:nth-of-type(2) {
+.burgerMenu span:nth-of-type(2) {
     top: calc(50% - 5px);
 }
 
-.menu-btn span:nth-of-type(3) {
+.burgerMenu span:nth-of-type(3) {
     top: calc(50% + 5px);
 }
 
-.menu-btn.active span:nth-of-type(1) {
+.burgerMenu.active span:nth-of-type(1) {
     display: none;
 }
 
-.menu-btn.active span:nth-of-type(2) {
+.burgerMenu.active span:nth-of-type(2) {
     top: 50%;
     transform: translate(-50%, 0%) rotate(45deg);
 
 }
 
-.menu-btn.active span:nth-of-type(3) {
+.burgerMenu.active span:nth-of-type(3) {
     top: 50%;
     transform: translate(-50%, 0%) rotate(-45deg);
 }
 
-.menu {
+.burgerMenuItems {
     position: fixed;
     z-index: 5;
     top: 0;
@@ -178,22 +180,21 @@ header {
 
 }
 
-.menu.active {
+.burgerMenuItems.active {
     transform: translateX(0);
 }
 
-.menu li {
+.burgerMenuItems li {
     list-style-type: none;
     margin: 40px 30px;
 }
 
-.menu a,
-.menu a:visited {
+.burgerMenuItems,
+.burgerMenuItems a:visited {
     color: #0499DD;
-    
 }
 
-.menu ul a {
+.burgerMenuItems ul a {
     font-size: 16px;
 }
 
@@ -219,7 +220,7 @@ header {
     text-transform: uppercase;
 }
 
-header .gradientButton {
+header .bigBlueButton {
     margin: 60px 10%;
 }
 

@@ -48,6 +48,61 @@ burgerMenu.addEventListener('click', function () {
 })
 
 
+function sendAppl() {
+    let userName = document.getElementById('userName').value;
+    let mesgInput = document.getElementById('sendMsg').style.display = 'block';
+    let str = userName + ', ваша заявка принята! Наш менеджер свяжется с вами в ближайшее время.';
+    document.getElementById('sendMsg_txt').textContent = str;
+}
 
+function closeSendMsg() {
+    let mesgInput = document.getElementById('sendMsg').style.display = 'none';
+    document.getElementById('userName').value = '';
+    document.getElementById('userPhone').value = '';
+    document.getElementById('userEmail').value = '';
+    document.getElementById('buttonSendAppl').setAttribute('disabled', 'disabled');
+}
 
+function isNameEmpty() {
+    let userName = document.getElementById('userName').value;
+    if (userName.trim() == '') {
+        return false;
+    } else {
+        return true;
+    }
+}
 
+function isPhoneEmpty() {
+    let userPhone = document.getElementById('userPhone').value;
+    if (userPhone.trim() == '') {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+function isEmailEmpty() {
+    let userEmail = document.getElementById('userEmail').value;
+    if (userEmail.trim() == '') {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+function isFormFilled() {
+    if (isNameEmpty() && isPhoneEmpty() && isEmailEmpty()) {
+       return true;
+    } else{
+       return false;
+    }
+}
+
+function makeButtonActive() {
+    button = document.getElementById('buttonSendAppl');
+    if (isFormFilled()){
+        button.removeAttribute('disabled')
+    } else{
+        button.setAttribute('disabled', 'disabled');
+    }
+}

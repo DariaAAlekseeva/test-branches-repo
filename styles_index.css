@@ -23,6 +23,7 @@ body {
 }
 
 .customDots {
+    cursor: pointer;
     margin-left: 20%;
     margin-top: 30px;
 }
@@ -50,6 +51,7 @@ body {
     bottom: 10px;
     font-size: 36px;
     color: #d4d4d4;
+    cursor: pointer;
 }
 
 .buttonNext {
@@ -90,6 +92,7 @@ body {
     font-weight: 700;
     text-align: center;
     line-height: 50px;
+    cursor: pointer;
 }
 
 .seeAllLink {
@@ -215,7 +218,7 @@ header {
     line-height: normal;
 }
 
-.header__navigation-menu-item:hover {
+.header__navigation-menu a:hover {
     color: #FFC700;
 }
 
@@ -608,6 +611,7 @@ header .bigBlueButton {
 }
 
 .feedback {
+    position: relative;
     width: 100%;
     height: 600px;
     background: url(img/index_feedback.jpeg);
@@ -617,9 +621,11 @@ header .bigBlueButton {
     -o-background-size: cover;
     background-size: cover;
     margin-top: 150px;
+    overflow: hidden;
 }
 
 .feedback__form {
+    position: relative;
     width: auto;
     height: 600px;
     background: url(img/feedback_blur_img.png) no-repeat;
@@ -666,6 +672,34 @@ header .bigBlueButton {
 
 .feedback__form-container .bigBlueButton {
     margin-top: 80px;
+}
+
+
+.feedback__sendMsg {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    width: 90%;
+    height: 300px;
+    background-color: #d4d4d4;
+    z-index: 5;
+    top: 200px;
+    left: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.feedback__sendMsg p{
+    margin: 80px auto 30px auto;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    color: #282828
+}
+
+button:disabled{
+    background:#EDEDED;
+    color: #c4c1c1;
 }
 
 footer {

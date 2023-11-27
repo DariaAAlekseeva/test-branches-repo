@@ -64,6 +64,7 @@
   text-align: left;
   color: #282828;
   font-size: 14px;
+  
 }
 
 ::placeholder {
@@ -72,5 +73,6 @@
 
 .modalWindow__content button{
   margin: 50px auto;
+  border: 0;
 }
 
